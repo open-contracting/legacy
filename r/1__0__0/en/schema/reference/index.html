@@ -147,22 +147,22 @@
 			<ul class="nav nav-tabs outer-menu">
 				<li><a href="../../../../latest/index.html">Standard</a></li>
 <li><a href="../../key_concepts/introduction/index.html">Key concepts</a></li>
-<li class="active"><a href="../reference.1">Schema</a></li>
-<li><a href="../../implementation/publication_levels.1">Implementation</a></li>
+<li class="active"><a href="../reference">Schema</a></li>
+<li><a href="../../implementation/publication_levels">Implementation</a></li>
 			</ul>
 			<ul class="nav nav-tabs inner-menu">
-				<li class="active"><a href="../reference.1">Reference</a></li>
-<li><a href="../release.1">Release</a></li>
+				<li class="active"><a href="../reference">Reference</a></li>
+<li><a href="../release">Release</a></li>
 <li><a href="../release_package/index.html">Release package</a></li>
 <li><a href="../record_package/index.html">Record package</a></li>
-<li><a href="../codelists.1">Codelists</a></li>
+<li><a href="../codelists">Codelists</a></li>
 			</ul>
 			<div> 
 <h1 id="reference">Reference</h1>
-<p><span class="lead">The <a href="../release.1">Release Schema</a> provides a detailed specification of the fields and data structures to use when publishing contracting data. Supplementary schemas showing how to combine releases into data packages and how to compile releases into records. This reference section works step-by-step through additional supporting information to assist publishers and users of the data.</span></p>
+<p><span class="lead">The <a href="../release">Release Schema</a> provides a detailed specification of the fields and data structures to use when publishing contracting data. Supplementary schemas showing how to combine releases into data packages and how to compile releases into records. This reference section works step-by-step through additional supporting information to assist publishers and users of the data.</span></p>
 <p><strong>Note: If any conflicts are found between this text, and the text within the schema, the schema takes precedence</strong></p>
 <h2 id="release-structure">Release structure</h2>
-<p>The majority of OCDS data is held within a <a href="../release.1">release</a>. One ore more releases are published within a release package. Releases are made up of a number of blocks of data, including:</p>
+<p>The majority of OCDS data is held within a <a href="../release">release</a>. One ore more releases are published within a release package. Releases are made up of a number of blocks of data, including:</p>
 <ul>
 <li><a href="../reference.1#planning">planning</a></li>
 <li><a href="../reference.1#tender">tender</a></li>
@@ -213,7 +213,7 @@
 <li><code>awardCriteria</code> and <code>awardCriteriaDetails</code> - The <a href="../codelists.1#award-criteria">award criteria code list</a> describes the basis on which contract awards will be made. This is an open codelist, and so may be extended with new codes. Free text describing the basis on which bids will be judged, and made, can be provided in the <code>awardCriteriaDetail</code> field. Publishers wishing to provide more structured information about selection, shortlisting and award criteria should propose <a href="../../key_concepts/conformance_and_extensions.1#extensions">extensions</a> for this. </li>
 <li><code>documents</code> - supporting documentation should be attached to the tender. This may include official legal notices of tender, as well as technical specifications, evaluation criteria, and, as a tender process progresses, clarifications, replies to queries and copies of bids submitted or listings of shortlisted firms. See the <a href="../reference.1#attachments">attachments</a> section for more details of how to include documents, and consult the <a href="../codelists.1#document-type">documentType codelist</a> for suggested documents to include for basic, intermediate or advanced publication.</li>
 </ul>
-<p>Information on bidders against a contract will be handled by an <a href="../../key_concepts/conformance_and_extensions.1#extensions">extension</a> during the period of the standard release candidate. Publishers wishing to provide detailed information on bidders should <a href="../../standard/support.1">contact support</a>.</p>
+<p>Information on bidders against a contract will be handled by an <a href="../../key_concepts/conformance_and_extensions.1#extensions">extension</a> during the period of the standard release candidate. Publishers wishing to provide detailed information on bidders should <a href="../../standard/support">contact support</a>.</p>
 <h3 id="award">Award</h3>
 <p>The award section is used to announce any awards issued for this tender. There may be multiple awards made. Releases can contain all, or a subset, of these awards. A related award block is required for every contract, as it contains information on the suppliers. </p>
 <div class="include-csv" data-src="standard/docs/field_definitions/release-award.csv" data-table-class="table table-striped schema-table"><table class="table table-striped schema-table side-scroll-table"><thead><tr><th>Field Name</th><th>Description</th><th>Format</th></tr></thead><tbody><tr><td>id</td><td>The identifier for this award. It must be unique and cannot change within the Open Contracting Process it is part of (defined by a single ocid). See the <a href="http://ocds.open-contracting.org/standard/r/1__0__0/en/key_concepts/identifiers/">identifier guidance</a> for further details.</td><td> string, integer</td></tr><tr><td>title</td><td>Award title</td><td> string</td></tr><tr><td>description</td><td>Award description</td><td> string</td></tr><tr><td>status</td><td>The current status of the award drawn from the <a href="http://ocds.open-contracting.org/standard/r/1__0__0/en/schema/codelists/#award-status">awardStatus codelist</a></td><td> string</td></tr><tr><td>date</td><td>The date of the contract award. This is usually the date on which a decision to award was made.</td><td>date-time string</td></tr><tr><td>value</td><td>The total value of this award. In the case of a framework contract this may be the total estimated lifetime value, or maximum value, of the agreement. There may be more than one award per procurement. See <a href="../reference.1#value">Value</a></td><td>Reference</td></tr><tr><td>suppliers</td><td>The suppliers awarded this award. If different suppliers have been awarded different items of values, these should be split into separate award blocks. See <a href="../reference.1#organization">Organization</a> section for further details.</td><td>Object Array</td></tr><tr><td>items</td><td>The goods and services awarded in this award, broken into line items wherever possible. Items should not be duplicated, but the quantity specified instead. See <a href="../reference.1#item">Item</a> section for further details.</td><td>Object Array</td></tr><tr><td>contractPeriod</td><td>The period for which the contract has been awarded. See <a href="../reference.1#period">Period</a></td><td>Reference</td></tr><tr><td>documents</td><td>All documents and attachments related to the award, including any notices. See <a href="../reference.1#document">Document</a> section for further details.</td><td>Object Array</td></tr><tr><td>amendment</td><td> See <a href="../reference.1#amendment">Amendment</a></td><td>Reference</td></tr></tbody></table></div><p>Notes:</p>

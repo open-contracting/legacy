@@ -79,15 +79,15 @@
 			<ul class="nav nav-tabs outer-menu">
 				<li><a href="../../../latest/index.html">Standard</a></li>
 <li><a href="../key_concepts/introduction/index.html">Key concepts</a></li>
-<li><a href="../schema/reference.1">Schema</a></li>
-<li class="active"><a href="publication_levels.1">Implementation</a></li>
+<li><a href="../schema/reference">Schema</a></li>
+<li class="active"><a href="publication_levels">Implementation</a></li>
 			</ul>
 			<ul class="nav nav-tabs inner-menu">
-				<li><a href="publication_levels.1">Publication levels</a></li>
+				<li><a href="publication_levels">Publication levels</a></li>
 <li><a href="publication_patterns">Publication patterns</a></li>
 <li><a href="merging">Merging</a></li>
 <li class="active"><a href="user_guidance">User guidance</a></li>
-<li><a href="registration.1">Registration</a></li>
+<li><a href="registration">Registration</a></li>
 			</ul>
 			<div> 
 <h1 id="user-guidance">User Guidance</h1>

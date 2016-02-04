@@ -87,23 +87,23 @@
 			<ul class="nav nav-tabs outer-menu">
 				<li><a href="../../../../latest/index.html">Standard</a></li>
 <li class="active"><a href="../introduction/index.html">Key concepts</a></li>
-<li><a href="../../schema/reference.1">Schema</a></li>
-<li><a href="../../implementation/publication_levels.1">Implementation</a></li>
+<li><a href="../../schema/reference">Schema</a></li>
+<li><a href="../../implementation/publication_levels">Implementation</a></li>
 			</ul>
 			<ul class="nav nav-tabs inner-menu">
 				<li><a href="../introduction/index.html">Introduction</a></li>
-<li><a href="../definitions.1">Definitions</a></li>
-<li class="active"><a href="../components.1">Components</a></li>
-<li><a href="../identifiers.1">Identifiers</a></li>
+<li><a href="../definitions">Definitions</a></li>
+<li class="active"><a href="../components">Components</a></li>
+<li><a href="../identifiers">Identifiers</a></li>
 <li><a href="../serialization/index.html">Serialization</a></li>
-<li><a href="../conformance_and_extensions.1">Conformance and extensions</a></li>
+<li><a href="../conformance_and_extensions">Conformance and extensions</a></li>
 			</ul>
 			<div> 
 <h1 id="components">Components</h1>
 <p><span class="lead">There are a number of key components that make up open contracting data. In particular, releases and records are the backbone of the Open Contracting Data Standard. But documents play a vital role in the world of contracting and while releases and records provide a machine-readable summary of a contracting process, they should always be supported by links to well-managed documents.</span></p>
 <h2 id="documents">Documents</h2>
 <p><img src="../../../assets/green_documents.svg.png" width="150" align="right">A contracting process generates many documents - from needs assessment and market studies, to tender notices and calls for proposals, and the actual text of contracts. Wherever there is no legal or policy restriction on doing so, these should be placed online in a stable location, and linked to from within the relevant OCDS release and records. </p>
-<p>See the <a href="../../schema/reference.1#document">document</a> section of <a href="../../schema/reference.1">schema reference</a> for more details of how to include documents in your data releases, and the <a href="../../schema/codelists.1#document-type">documentType code list</a> for a list of common documents that the OCDS recommends are included, and for details of where documents may be attached within the OCDS structure.</p>
+<p>See the <a href="../../schema/reference.1#document">document</a> section of <a href="../../schema/reference">schema reference</a> for more details of how to include documents in your data releases, and the <a href="../../schema/codelists.1#document-type">documentType code list</a> for a list of common documents that the OCDS recommends are included, and for details of where documents may be attached within the OCDS structure.</p>
 <h2 id="releases">Releases</h2>
 <p><img src="../../../assets/green_release.svg.png" width="150" align="right">To encourage the greatest possible openness of public contracting information, the Open Contracting Data Standard is designed to support <strong>real-time publication of information</strong>. At each stage of the contracting process, or at each point when changes, or amendments, are made to data about the contracting process, the standard allows publishers to provide a <strong>release</strong>.</p>
 <p>Releases are cumulative. Over a contracting process releases may be provided to describe a tender, announce contract awards, detail a finalised contract, and provide updates on implementation. Once published, a release must not be changed. Updated information should be shared through a new release.</p>
@@ -168,7 +168,7 @@ If the record is complete with versioning information, then the versioning secti
 <p>A notice can be attached to a tender, award or contract within OCDS using the <code>documents</code> property, and a <code>documentType</code> value of ‘notice’. If the notice is accessible online, then the URL to the notice can be given. If the notice was published in a printed publication, or posted in some other public venue, the document <code>description</code> field can be used to explain this, and the <code>format</code> can be set to ‘offline/print’. The <code>publicationDate</code> of the document should be the date the notice was made available.</p>
 <h2 id="packages">Packages</h2>
 <p>For the convenience of users, a collection of releases, or a collection of records, can be combined together in a release or record package.</p>
-<p>View the <a href="../../schema/reference.1">schema reference</a> for more details. </p></div>
+<p>View the <a href="../../schema/reference">schema reference</a> for more details. </p></div>
 		</div>
 	</div>
 

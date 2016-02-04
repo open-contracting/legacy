@@ -103,15 +103,15 @@
 			<ul class="nav nav-tabs outer-menu">
 				<li><a href="../index.html">Standard</a></li>
 <li><a href="../key_concepts/introduction/index.html">Key concepts</a></li>
-<li><a href="../schema/reference.1">Schema</a></li>
-<li class="active"><a href="publication_levels.1">Implementation</a></li>
+<li><a href="../schema/reference">Schema</a></li>
+<li class="active"><a href="publication_levels">Implementation</a></li>
 			</ul>
 			<ul class="nav nav-tabs inner-menu">
-				<li><a href="publication_levels.1">Publication levels</a></li>
+				<li><a href="publication_levels">Publication levels</a></li>
 <li><a href="publication_patterns">Publication patterns</a></li>
 <li class="active"><a href="merging">Merging</a></li>
 <li><a href="user_guidance">User guidance</a></li>
-<li><a href="registration.1">Registration</a></li>
+<li><a href="registration">Registration</a></li>
 			</ul>
 			<div> 
 <h1 id="merging">Merging</h1>
@@ -126,7 +126,7 @@
 <li>Versioned Release: For each field in the release, the versioned release contains the history
   of all the changes to that field over all the releases.</li>
 </ul>
-<p>For full information on records and releases see the <a href="../key_concepts/components.1">key concepts</a> and <a href="../schema/reference.1">schema reference</a>.</p>
+<p>For full information on records and releases see the <a href="../key_concepts/components">key concepts</a> and <a href="../schema/reference">schema reference</a>.</p>
 <h2 id="merging_1">Merging</h2>
 <p>If a publisher provides releases and a record containing a list of the releases, then third party software should be able to create compiled and versioned releases. Publishers may or may not want to run this software themselves and provide the full record for download.</p>
 <p>The following sections describe how merging works should individual parties wish to implement merging or a merging library.</p>

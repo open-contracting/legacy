@@ -109,22 +109,22 @@
 			<ul class="nav nav-tabs outer-menu">
 				<li><a href="../../../latest/index.html">Standard</a></li>
 <li><a href="../key_concepts/introduction/index.html">Key concepts</a></li>
-<li><a href="../schema/reference.1">Schema</a></li>
-<li class="active"><a href="publication_levels.1">Implementation</a></li>
+<li><a href="../schema/reference">Schema</a></li>
+<li class="active"><a href="publication_levels">Implementation</a></li>
 			</ul>
 			<ul class="nav nav-tabs inner-menu">
-				<li><a href="publication_levels.1">Publication levels</a></li>
+				<li><a href="publication_levels">Publication levels</a></li>
 <li class="active"><a href="publication_patterns">Publication patterns</a></li>
 <li><a href="merging">Merging</a></li>
 <li><a href="user_guidance">User guidance</a></li>
-<li><a href="registration.1">Registration</a></li>
+<li><a href="registration">Registration</a></li>
 			</ul>
 			<div> 
 <h1 id="publication-patterns">Publication patterns</h1>
 <p><span class="lead">The following section sets out a number of publication patterns that will increase the usability of data for users.</span></p>
 <h2 id="basic">Basic</h2>
 <h3 id="licensing">Licensing</h3>
-<p>Publishing data under an open licenses is an important part of open contracting. Without this, restrictions on re-use may prevent many of the important <a href="../standard/use_cases.1">use cases</a> for open contracting information being realised.</p>
+<p>Publishing data under an open licenses is an important part of open contracting. Without this, restrictions on re-use may prevent many of the important <a href="../standard/use_cases">use cases</a> for open contracting information being realised.</p>
 <p>A license statement sets out the permission that users have to access, use and re-use the data. This can take the form of a <a href="http://creativecommons.org/publicdomain/">Public Domain Dedication or Certification</a> which transfers a dataset into the public domain, or re-asserts that there are no existing copyrights or database rights inherent in the dataset (which is the case for government datasets in some jurisdictions), or the application of a license which sets out the terms under which a dataset may be re-used.</p>
 <p>We recommend the use of either a public domain dedication/certification, or an attribution only license.</p>
 <ul>
@@ -150,7 +150,7 @@
 <hr>
 <h2 id="intermediate">Intermediate</h2>
 <h3 id="release-and-record-uris">Release and record URIs</h3>
-<p>To achieve <a href="publication_levels.1">3 and 4 ☆</a> ODCS publication, publishers should provide data in files following the full OCDS schema, and either with releases and records provided in bulk (3 ☆), or with each release at it's own unique URI (4 ☆). </p>
+<p>To achieve <a href="publication_levels">3 and 4 ☆</a> ODCS publication, publishers should provide data in files following the full OCDS schema, and either with releases and records provided in bulk (3 ☆), or with each release at it's own unique URI (4 ☆). </p>
 <!--ToDo: Work up examples of this in future-->
 
 <h3 id="provide-full-records">Provide full records</h3>
