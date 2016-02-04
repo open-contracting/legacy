@@ -1,0 +1,387 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <!--[if lt IE 7 ]> <html class="ie6"> <![endif]-->
+  <!--[if IE 7 ]>    <html class="ie7"> <![endif]-->
+  <!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+  <!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+  <!--[if (gt IE 9)|!(IE)]><!--> <html class="modern"> <!--<![endif]-->
+	<title>OCDS Draft Standard</title>
+	<meta name="description" content="OCDS Draft Standard">
+  <meta name="author" content="Sarah Bird">
+  <link href='http://fonts.googleapis.com/css?family=Arvo:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+  
+  
+      <link type="text/css" href="../../../../../static/css/site.css?92bade7d" rel="stylesheet"/>
+  
+  
+    <link rel="stylesheet" href="http://assets.annotateit.org/annotator/v1.2.9/annotator.min.css">
+
+</head>
+
+<body class="page page-id-569 page-template-default custom-background styles custom-header header-image full-width-content" data-spy="scroll" data-target=".toc">
+
+<div class="site-container">
+
+    <header itemtype="http://schema.org/WPHeader" itemscope="itemscope" role="banner" class="site-header">
+        <div class="wrap">
+            <div class="title-area">
+                <h1 itemprop="headline" class="site-title">
+                    <a href="http://standard.open-contracting.org/">Open Contracting Data Standard (OCDS) Project Site</a>
+                </h1>
+            </div>
+            <aside class="widget-area header-widget-area">
+                <section class="widget widget_nav_menu" id="nav_menu-2">
+                    <div class="widget-wrap">
+                        <nav itemtype="http://schema.org/SiteNavigationElement" itemscope="itemscope" role="navigation" class="nav-header">
+                            <ul class="menu genesis-nav-menu" id="menu-main-menu">
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-568" id="menu-item-568"><a onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://standard.open-contracting.org/project/', 'Project']);" href="http://standard.open-contracting.org/project/">Project</a></li>
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-682" id="menu-item-682"><a onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://ocds.open-contracting.org/standard/', 'Standard']);" href="http://ocds.open-contracting.org/standard/">Standard</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-570" id="menu-item-570"><a onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://standard.open-contracting.org/progress/', 'Progress']);" href="http://standard.open-contracting.org/progress/">Progress</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-608" id="menu-item-608"><a onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://standard.open-contracting.org/blog/', 'Blog']);" href="http://standard.open-contracting.org/blog/">Blog</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-576" id="menu-item-576"><a onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://standard.open-contracting.org/resources/', 'Resources']);" href="http://standard.open-contracting.org/resources/">Resources</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-580" id="menu-item-580"><a onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://standard.open-contracting.org/getinvolved/', 'Get Involved']);" href="http://standard.open-contracting.org/getinvolved/">Get Involved</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </section>
+            </aside>
+        </div>
+    </header>
+
+    <div class="site-tagline"></div>
+    <div class="site-inner">
+        <div class="wrap">
+            
+<div class="col-lg-3">
+	<div class="side-nav" data-spy="affix" data-offset-top="5" data-offset-bottom="50">
+		<div class="toc">
+<ul class="nav">
+<li><a href="index.html#serialization">Serialization</a><ul class="nav">
+<li><a href="index.html#json">JSON</a><ul class="nav">
+<li><a href="index.html#generating-json">Generating JSON</a></li>
+<li><a href="index.html#consuming-json">Consuming JSON</a></li>
+</ul>
+</li>
+<li><a href="index.html#flat-csv-formats">Flat CSV formats</a><ul class="nav">
+<li><a href="index.html#simplified-single-table">Simplified single table</a></li>
+<li><a href="index.html#multi-table">Multi-table</a></li>
+<li><a href="index.html#data-packages">Data packages</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+	</div>
+</div>
+
+<div class="col-lg-9 standard-docs">
+    
+    
+    
+		
+
+
+
+	<div id="annotatable">
+		<div class="tab-content">
+			<ul class="nav nav-tabs outer-menu">
+				<li><a href="../../../../latest/index.html">Standard</a></li>
+<li class="active"><a href="../introduction/index.html">Key concepts</a></li>
+<li><a href="../../schema/reference.1">Schema</a></li>
+<li><a href="../../implementation/publication_levels.1">Implementation</a></li>
+			</ul>
+			<ul class="nav nav-tabs inner-menu">
+				<li><a href="../introduction/index.html">Introduction</a></li>
+<li><a href="../definitions.1">Definitions</a></li>
+<li><a href="../components.1">Components</a></li>
+<li><a href="../identifiers.1">Identifiers</a></li>
+<li class="active"><a href="index.html">Serialization</a></li>
+<li><a href="../conformance_and_extensions.1">Conformance and extensions</a></li>
+			</ul>
+			<div> 
+<h1 id="serialization">Serialization</h1>
+<p><span class="lead">The Open Contracting Data Standard provides a <strong>structured data model</strong> for capturing in-depth information about all stages of the contracting process.</span></p>
+<p><span class="lead">The current canonical version of this data model is provided by a <strong><a href="../../schema/release.1">JSON Schema</a></strong> which describes field names, field definitions and structures for the data. The compliance of data with the Open Contracting Data Standard will be assessed against this schema.</span></p>
+<p>However, there are many use cases where publishers and users will want to work with data serialized in other formats. For this reason, the current version of OCDS supports a number of <strong>secondary serializations</strong> which are based on the canonical schema.</p>
+<h2 id="json">JSON</h2>
+<p>JSON stands for Javascript Object Notation, and is a format widely used for the exchange of data on the web. The JSON schema language provides validation tools for working with JSON data.</p>
+<h3 id="generating-json">Generating JSON</h3>
+<p>Most programming languages provide tools for output data as JSON. </p>
+<p>The <a href="https://github.com/open-contracting/mapper">OCDS Mapper</a> tool can convert from flat CSV files to structured OCDS data based on a mapping template. </p>
+<p><a href="http://json-schema.org/implementations.html">A range of tools</a> are available for working with <a href="http://json-schema.org/">JSON-Schema</a>, including validation and form generation tools. </p>
+<h3 id="consuming-json">Consuming JSON</h3>
+<p>Most programming languages provide tools for reading JSON.</p>
+<p>A number of <a href="http://en.wikipedia.org/wiki/NoSQL">JSON native databases</a> are available for working directly with large collections of JSON documents, and command line tools such as <a href="http://stedolan.github.io/jq/">jq</a> support advanced query and data retrieval with JSON files.</p>
+<p>There are also a range of generic tools which can convert JSON into flat CSV structures, including:</p>
+<ul>
+<li><a href="http://konklone.io/json/">JSON -&gt; CSV</a> - online tool for converting small documents.</li>
+<li><a href="http://openrefine.org/">Open Refine</a> - desktop tool that can handle large documents, and supports advanced data manipulation.</li>
+</ul>
+<h2 id="flat-csv-formats">Flat CSV formats</h2>
+<p>JSON is based on a tree structure, with data elements nested inside one another. However, many people are more familiar working with tabular data, made up of columns and rows. There is no easy way to represent structured data in a single table. However, we propose two models for publishers to adopt. </p>
+<ul>
+<li><strong>Simplified single table</strong> - for cases where there are no one-to-many relationships in the data (e.g. each tender has only one award and contract, and each has only one line-item).</li>
+<li><strong>Multi-table</strong> - where more advanced structures are required, but where it is desirable to be able to work with data in spreadsheet-style layouts</li>
+</ul>
+<p>In each case, fields are identified by the <a href="http://tools.ietf.org/html/rfc6901">pointer</a> to their JSON equivalent. For example:</p>
+<div class="include-json" data-src="standard/example/serialization-flat.json"><pre><code class="language-javascript">{
+    "releases": [{
+        "ocid":"ocds-a2ef3d01-1594121",
+        "tag":"tender",
+        "tender": {
+            "id":"ocds-a2ef3d01-1594121/1",
+            "items": {
+                "id":1,
+                "description":"Standards development"
+            }
+        }
+    }]
+    
+}</code></pre></div><p>would be rendered in a flat CSV format as:</p>
+<div class="include-csv" data-src="standard/example/serialization-flat.csv" data-table-class="table table-striped schema-table"><table class="table table-striped schema-table side-scroll-table"><thead><tr><th>ocid</th><th>tag</th><th>tender/id</th><th>tender/items/id</th><th>tender/items/description</th></tr></thead><tbody><tr><td>ocds-a2ef3d01-1594121</td><td>tender</td><td>ocds-a2ef3d01-1594121/1</td><td>1</td><td>Standards development</td></tr></tbody></table></div><p>A set of prototype tools for generating flat CSV OCDS templates are <a href="https://github.com/open-contracting/flattening-ocds">available on GitHub</a>.</p>
+<h3 id="simplified-single-table">Simplified single table</h3>
+<p>In cases where there are no one-to-many relationships within a release, a release can be represented in a single tabular row and stored as CSV. </p>
+<p>Such cases are likely to be rare. Flat CSV data models based upon repeated lines to handle one-to-many relationships should be avoided. </p>
+<h3 id="multi-table">Multi-table</h3>
+<p>In cases where there are one-to-many relationships within a release, it will be necessary to split the data into multiple tables. A set of tables can be presented as tabs in a spreadsheet, providing a familiar tool for data entry and analysis, or can be contained within a <a href="http://dataprotocols.org/data-packages/">data package</a>. </p>
+<p>By including identifiers in the sub-tables that point to the ocid, releaseID and the id of the parent entity of the sub-table item, it is possible to:</p>
+<ul>
+<li>Use <a href="http://en.wikipedia.org/wiki/Join_%28SQL%29">database joins</a> or spreadsheet Vlookup (<a href="http://office.microsoft.com/en-gb/excel-help/vlookup-HP005209335.aspx">Excel</a>, <a href="https://support.google.com/docs/answer/3093318?hl=en">Google Docs</a>, <a href="https://wiki.openoffice.org/wiki/Documentation/How_Tos/Calc:_VLOOKUP_function">Open Office</a>) to analyse the data;</li>
+<li>Re-construct a structured data tree (e.g. in JSON) from the tabular data;</li>
+</ul>
+<p>The JSON re-uses common definitions regularly (e.g. for items, classifications, organizations etc.) and applications following the multi-table approach should generally seek to collect together items of each type in their own table, rather than creating different tables for each kind of item, organization and so-on.</p>
+<p>A worked example of a multi-table template is shown below.</p>
+<p>NOTE: This example is based on an earlier version of the schema, and does not show all sub-tables. It should be understood as illustrative only.</p>
+<div class="tabbable">
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="index.html#release" data-toggle="tab">release</a></li>
+        <li><a href="index.html#identifier" data-toggle="tab">identifier</a></li>
+        <li><a href="index.html#award" data-toggle="tab">award</a></li>
+        <li><a href="index.html#contract" data-toggle="tab">contract</a></li>
+        <li><a href="index.html#item" data-toggle="tab">item</a></li>
+        <li><a href="index.html#organization" data-toggle="tab">organization</a></li>
+        <li><a href="index.html#milestone" data-toggle="tab">milestone</a></li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane active" id="release">
+            <div class="include-csv" data-src="standard/example/flat/release.csv" data-table-class="table table-striped schema-table"><table class="table table-striped schema-table side-scroll-table"><thead><tr><th>ocid</th><th>id</th><th>date</th><th>tag:array</th><th>initiationType</th><th>planning/budget/source</th><th>planning/budget/id</th><th>planning/budget/description</th><th>planning/budget/amount/amount:number</th><th>planning/budget/amount/currency</th><th>planning/budget/project</th><th>planning/budget/projectID</th><th>planning/budget/uri</th><th>planning/rationale</th><th>tender/id</th><th>tender/title</th><th>tender/description</th><th>tender/status</th><th>tender/minValue/amount:number</th><th>tender/minValue/currency</th><th>tender/value/amount:number</th><th>tender/value/currency</th><th>tender/procurementMethod</th><th>tender/procurementMethodRationale</th><th>tender/awardCriteria</th><th>tender/awardCriteriaDetails</th><th>tender/submissionMethod:array</th><th>tender/submissionMethodDetails</th><th>tender/tenderPeriod/startDate</th><th>tender/tenderPeriod/endDate</th><th>tender/enquiryPeriod/startDate</th><th>tender/enquiryPeriod/endDate</th><th>tender/hasEnquiries:boolean</th><th>tender/eligibilityCriteria</th><th>tender/awardPeriod/startDate</th><th>tender/awardPeriod/endDate</th><th>tender/procuringEntity/identifier/scheme</th><th>tender/procuringEntity/identifier/id</th><th>tender/procuringEntity/identifier/description</th><th>tender/procuringEntity/identifier/uri</th><th>tender/procuringEntity/name</th><th>tender/procuringEntity/address/streetAddress</th><th>tender/procuringEntity/address/locality</th><th>tender/procuringEntity/address/region</th><th>tender/procuringEntity/address/postalCode</th><th>tender/procuringEntity/address/countryName</th><th>tender/procuringEntity/contactPoint/name</th><th>tender/procuringEntity/contactPoint/email</th><th>tender/procuringEntity/contactPoint/telephone</th><th>tender/procuringEntity/contactPoint/faxNumber</th><th>tender/procuringEntity/contactPoint/url</th><th>tender/amendment/date</th><th>tender/amendment/rationale</th><th>buyer/identifier/scheme</th><th>buyer/identifier/id</th><th>buyer/identifier/description</th><th>buyer/identifier/uri</th><th>buyer/name</th><th>buyer/address/streetAddress</th><th>buyer/address/locality</th><th>buyer/address/region</th><th>buyer/address/postalCode</th><th>buyer/address/countryName</th><th>buyer/contactPoint/name</th><th>buyer/contactPoint/email</th><th>buyer/contactPoint/telephone</th><th>buyer/contactPoint/faxNumber</th><th>buyer/contactPoint/url</th><th>language</th></tr></thead><tbody></tbody></table></div></div>
+        <div class="tab-pane" id="identifier">
+            <div class="include-csv" data-src="standard/example/flat/Identifier.csv" data-table-class="table table-striped schema-table"><table class="table table-striped schema-table side-scroll-table"><thead><tr><th>ocid</th><th>release/id:additionalClassifications</th><th>release/tender/id:additionalClassifications</th><th>release/tender/items[]/id:additionalClassifications</th><th>release/id:additionalIdentifiers</th><th>release/tender/id:additionalIdentifiers</th><th>release/awards[]/id:additionalIdentifiers</th><th>release/awards[]/id:additionalClassifications</th><th>release/awards[]/items[]/id:additionalClassifications</th><th>release/contracts[]/id:additionalClassifications</th><th>release/contracts[]/items[]/id:additionalClassifications</th><th>release/contracts[]/id:additionalIdentifiers</th><th>release/contracts[]/implementation/transactions[]/id:additionalIdentifiers</th><th>scheme</th><th>id</th><th>description</th><th>uri</th></tr></thead><tbody></tbody></table></div></div>
+        <div class="tab-pane" id="award">
+            <div class="include-csv" data-src="standard/example/flat/Award.csv" data-table-class="table table-striped schema-table"><table class="table table-striped schema-table side-scroll-table"><thead><tr><th>ocid</th><th>release/id:awards</th><th>id</th><th>title</th><th>description</th><th>status</th><th>date</th><th>amendment/date</th><th>amendment/rationale</th></tr></thead><tbody></tbody></table></div></div>
+        <div class="tab-pane" id="contract">
+            <div class="include-csv" data-src="standard/example/flat/Contract.csv" data-table-class="table table-striped schema-table"><table class="table table-striped schema-table side-scroll-table"><thead><tr><th>ocid</th><th>release/id:contracts</th><th>id</th><th>awardID</th><th>title</th><th>description</th><th>status</th><th>period/startDate</th><th>period/endDate</th><th>value/amount:number</th><th>value/currency</th><th>dateSigned</th><th>amendment/date</th><th>amendment/rationale</th></tr></thead><tbody></tbody></table></div></div>
+        <div class="tab-pane" id="item">
+            <div class="include-csv" data-src="standard/example/flat/Item.csv" data-table-class="table table-striped schema-table"><table class="table table-striped schema-table side-scroll-table"><thead><tr><th>ocid</th><th>release/id:items</th><th>release/tender/id:items</th><th>release/awards[]/id:items</th><th>release/contracts[]/id:items</th><th>id</th><th>description</th><th>classification/scheme</th><th>classification/id</th><th>classification/description</th><th>classification/uri</th><th>quantity:integer</th><th>unit/name</th><th>unit/value/amount:number</th><th>unit/value/currency</th></tr></thead><tbody></tbody></table></div></div>
+        <div class="tab-pane" id="organization">
+            <div class="include-csv" data-src="standard/example/flat/Organization.csv" data-table-class="table table-striped schema-table"><table class="table table-striped schema-table side-scroll-table"><thead><tr><th>ocid</th><th>release/id:suppliers</th><th>release/awards[]/id:suppliers</th><th>identifier/scheme</th><th>identifier/id</th><th>identifier/description</th><th>identifier/uri</th><th>name</th><th>address/streetAddress</th><th>address/locality</th><th>address/region</th><th>address/postalCode</th><th>address/countryName</th><th>contactPoint/name</th><th>contactPoint/email</th><th>contactPoint/telephone</th><th>contactPoint/faxNumber</th><th>contactPoint/url</th></tr></thead><tbody></tbody></table></div></div>
+        <div class="tab-pane" id="milestone">
+            <div class="include-csv" data-src="standard/example/flat/Milestone.csv" data-table-class="table table-striped schema-table"><table class="table table-striped schema-table side-scroll-table"><thead><tr><th>ocid</th><th>release/id:milestones</th><th>release/tender/id:milestones</th><th>release/contracts[]/id:milestones</th><th>id</th><th>title</th><th>description</th><th>dueDate</th><th>status</th><th>dateModified</th></tr></thead><tbody></tbody></table></div></div>
+    </div>
+</div>
+
+<h3 id="data-packages">Data packages</h3>
+<p>Whatever serialisation is used for Open Contracting Data, a single file may contain one or more release and records.</p>
+<p>The release and record data package schemas describe the key meta-data that must be supplied for any file providing Open Contracting Data. This includes the publishedDate, publisher, uri for accessing the file, and the licensing details for the file.</p></div>
+		</div>
+	</div>
+
+</div>
+
+        </div>
+    </div>
+
+    <footer itemtype="http://schema.org/WPFooter" itemscope="itemscope" role="contentinfo" class="site-footer">
+        <div class="wrap">
+            <div class="standard-advanced">
+                <h5>
+                    Standard tools:
+                    <a href="index.html#" title="Change versions" data-toggle="modal" data-target="#changeVersion"><span class="oi oi-fork navicon" aria-hidden="true"></span></a>
+                    
+                </h5>
+            </div>
+            <img width="905" height="39" alt="line" src="http://ocds.wpengine.com/wp-content/uploads/2011/02/line.png" class="aligncenter wp-image-586 size-full">
+            <h5>
+                The Open Contracting Data Standard is a core product of the <a htef="http://www.open-contracting.org">Open Contracting Partnership (OCP)</a>.<br>Version 1.0 of the standard is being developed for the OCP by the <a href="http://www.webfoundation.org">World Wide Web Foundation</a>,<br>through a project supported by <a href="http://www.omidyar.com">Omidyar Network</a> and the <a href="http://www.worldbank.org">World Bank</a>.
+                <div class="neostyle3"><a href="https://creativecommons.org/licenses/by/4.0/"></a><h5><a href="https://creativecommons.org/licenses/by/4.0/">Except where otherwise noted, content on this site is licensed<br>under a Creative Commons Attribution 4.0 International license.</a></h5></div>
+            </h5>
+        </div>
+    </footer>
+    <!-- OVERLAY DIALOGS CONTENT -->
+    <div class="modal fade" id="help" tabindex="-1" role="dialog" aria-labelledby="Help" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h2 class="modal-title">Help</h2>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        In order to comment, you must be logged in. To log in, click the <span class="oi oi-account-login" aria-hidden="true"></span>
+                        button in the top bar. After logging in you can select senctences or paragraphs in the document and an icon will appear, as shown in the
+                        image below. Click the icon and enter text to view it.
+                    </p>
+                    <p>
+                        <img src="../../../../../static/images/annotation_demo.png" width="150px"/>
+                    </p>
+                    <p>
+                        If you are having any problems, please don't hesitate to email us on our <a href="https://groups.google.com/a/webfoundation.org/forum/#!forum/public-ocds">mailing list</a>.
+                    </p>
+                </div><!--/.modal-body-->
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <div class="modal fade" id="changeVersion" tabindex="-1" role="dialog" aria-labelledby="ChangeVersion" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h2 class="modal-title">Change release from v.1.0.0 </h2>
+                </div>
+                <div class="modal-body">
+                    <p>
+                     You are currently viewing version 1.0.0 of the Open Contracting Data Standard. 
+                    
+                        Released on: July 29, 2015, 2:10 p.m.
+                    
+                    
+                    Use the following links to change to a different version:
+                    </p>
+                    <ul>
+                        
+                            
+                            <li><a href="../../../../1__0__RC/en/index.html">1.0.Rc</a> (Last modified: March 19, 2015, 3:58 p.m.)</li>
+                            
+                        
+                            
+                            <li><a href="../../../../../legacy/r/0__3__3/index.html">0.3.3</a> (Last modified: Sept. 19, 2014, 5:18 p.m.)</li>
+                            
+                        
+                            
+                            <li><a href="../../../../../legacy/r/0__3__2/index.html">0.3.2</a> (Last modified: Sept. 3, 2014, 9:40 a.m.)</li>
+                            
+                        
+                            
+                            <li><a href="../../../../../legacy/r/0__2__0/index.html">0.2.0</a> (Last modified: June 25, 2014, 2:07 p.m.)</li>
+                            
+                        
+                            
+                            <li><a href="../../../../../legacy/r/0__1__0/index.html">0.1.0</a> (Last modified: June 20, 2014, 11:17 p.m.)</li>
+                            
+                        
+                    </ul>
+                    
+                    
+                        <p><a href="../../../../master/en/index.html">Master</a> - the current working draft of the standard. This is not a release, it is our working copy currently undergoing edits.</p>
+                    
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div class="modal fade" id="changeLanguage" tabindex="-1" role="dialog" aria-labelledby="ChangeLanguage" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title">Change Language</h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        <ul>
+                            
+                            <li><a href="../../index.html">English</a></li>
+                            
+                            <li><a href="../../../es/index.html">Español</a></li>
+                            
+                        </ul>
+                    </p>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <!-- /OVERLAY DIALOGS -->
+
+</div><!-- /.site-container -->
+    
+    
+        <script type="text/javascript" src="../../../../../static/js/site.js?ef56cfd0"></script>
+    
+
+    
+    <script src="http://assets.annotateit.org/annotator/v1.2.9/annotator-full.min.js"></script>
+    <script>
+    jQuery(function ($) {
+      if ($('html').is('.ie6, .ie7, .ie8, .ie9')) {
+			alert("This site does not work with Internet Explorer 9 or earlier. Please use a more recent version of Internet Explorer, or an open-source browser such as Firefox"); 
+      } else {
+        var PROJECTNAME = 'ocdsstandard',
+            VERSION = '1.0.0',
+            URI = 'http://ocds.opendataservices.coop/standard/r/1__0__0/en/key_concepts/serialization/',
+            SITE_UNIQUE_ID = '',
+            PAGE_UNIQUE_ID = SITE_UNIQUE_ID + VERSION;
+
+        a = $('#annotatable').annotator(
+            
+               { readOnly: true }
+            
+            );
+        a.annotator('setupPlugins', {}, {
+            
+                Auth: false,
+            
+
+            Tags: false,
+            Store: false,
+            Filter: false,
+            Permissions: {
+                showViewPermissionsCheckbox: false,
+                showEditPermissionsCheckbox: false,
+                user: '',
+                permissions: {
+                    'read':   ["group:__world__"],
+                    'update': [""],
+                    'delete': [""],
+                    'admin':  [""],
+                },
+            },
+        });
+        a.annotator('addPlugin', 'Store', { 
+            prefix: 'http://annotateit.org/api',
+            annotationData: {
+                'project': PROJECTNAME,
+                'version': VERSION,
+                'uri': URI,
+                'siteuid': SITE_UNIQUE_ID,
+                'pageuid': PAGE_UNIQUE_ID,
+            },
+            loadFromSearch: {
+                
+                    'pageuid': PAGE_UNIQUE_ID.toLowerCase(),
+                
+                'limit': 1000,
+            },
+        });
+      }
+    });
+    </script>
+
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-35677147-1', 'auto');
+            ga('send', 'pageview');
+
+        </script>
+</body>
+</html>

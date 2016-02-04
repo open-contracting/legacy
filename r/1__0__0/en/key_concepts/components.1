@@ -1,0 +1,368 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <!--[if lt IE 7 ]> <html class="ie6"> <![endif]-->
+  <!--[if IE 7 ]>    <html class="ie7"> <![endif]-->
+  <!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+  <!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+  <!--[if (gt IE 9)|!(IE)]><!--> <html class="modern"> <!--<![endif]-->
+	<title>OCDS Draft Standard</title>
+	<meta name="description" content="OCDS Draft Standard">
+  <meta name="author" content="Sarah Bird">
+  <link href='http://fonts.googleapis.com/css?family=Arvo:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+  
+  
+      <link type="text/css" href="../../../../static/css/site.css?92bade7d" rel="stylesheet"/>
+  
+  
+    <link rel="stylesheet" href="http://assets.annotateit.org/annotator/v1.2.9/annotator.min.css">
+
+</head>
+
+<body class="page page-id-569 page-template-default custom-background styles custom-header header-image full-width-content" data-spy="scroll" data-target=".toc">
+
+<div class="site-container">
+
+    <header itemtype="http://schema.org/WPHeader" itemscope="itemscope" role="banner" class="site-header">
+        <div class="wrap">
+            <div class="title-area">
+                <h1 itemprop="headline" class="site-title">
+                    <a href="http://standard.open-contracting.org/">Open Contracting Data Standard (OCDS) Project Site</a>
+                </h1>
+            </div>
+            <aside class="widget-area header-widget-area">
+                <section class="widget widget_nav_menu" id="nav_menu-2">
+                    <div class="widget-wrap">
+                        <nav itemtype="http://schema.org/SiteNavigationElement" itemscope="itemscope" role="navigation" class="nav-header">
+                            <ul class="menu genesis-nav-menu" id="menu-main-menu">
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-568" id="menu-item-568"><a onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://standard.open-contracting.org/project/', 'Project']);" href="http://standard.open-contracting.org/project/">Project</a></li>
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-682" id="menu-item-682"><a onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://ocds.open-contracting.org/standard/', 'Standard']);" href="http://ocds.open-contracting.org/standard/">Standard</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-570" id="menu-item-570"><a onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://standard.open-contracting.org/progress/', 'Progress']);" href="http://standard.open-contracting.org/progress/">Progress</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-608" id="menu-item-608"><a onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://standard.open-contracting.org/blog/', 'Blog']);" href="http://standard.open-contracting.org/blog/">Blog</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-576" id="menu-item-576"><a onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://standard.open-contracting.org/resources/', 'Resources']);" href="http://standard.open-contracting.org/resources/">Resources</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-580" id="menu-item-580"><a onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://standard.open-contracting.org/getinvolved/', 'Get Involved']);" href="http://standard.open-contracting.org/getinvolved/">Get Involved</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </section>
+            </aside>
+        </div>
+    </header>
+
+    <div class="site-tagline"></div>
+    <div class="site-inner">
+        <div class="wrap">
+            
+<div class="col-lg-3">
+	<div class="side-nav" data-spy="affix" data-offset-top="5" data-offset-bottom="50">
+		<div class="toc">
+<ul class="nav">
+<li><a href="components.1#components">Components</a><ul class="nav">
+<li><a href="components.1#documents">Documents</a></li>
+<li><a href="components.1#releases">Releases</a></li>
+<li><a href="components.1#records">Records</a></li>
+<li><a href="components.1#updates-and-amendments">Updates and amendments</a></li>
+<li><a href="components.1#notices">Notices</a></li>
+<li><a href="components.1#packages">Packages</a></li>
+</ul>
+</li>
+</ul>
+</div>
+	</div>
+</div>
+
+<div class="col-lg-9 standard-docs">
+    
+    
+    
+		
+
+
+
+	<div id="annotatable">
+		<div class="tab-content">
+			<ul class="nav nav-tabs outer-menu">
+				<li><a href="../../../latest/index.html">Standard</a></li>
+<li class="active"><a href="introduction/index.html">Key concepts</a></li>
+<li><a href="../schema/reference.1">Schema</a></li>
+<li><a href="../implementation/publication_levels.1">Implementation</a></li>
+			</ul>
+			<ul class="nav nav-tabs inner-menu">
+				<li><a href="introduction/index.html">Introduction</a></li>
+<li><a href="definitions.1">Definitions</a></li>
+<li class="active"><a href="components.1">Components</a></li>
+<li><a href="identifiers.1">Identifiers</a></li>
+<li><a href="serialization/index.html">Serialization</a></li>
+<li><a href="conformance_and_extensions.1">Conformance and extensions</a></li>
+			</ul>
+			<div> 
+<h1 id="components">Components</h1>
+<p><span class="lead">There are a number of key components that make up open contracting data. In particular, releases and records are the backbone of the Open Contracting Data Standard. But documents play a vital role in the world of contracting and while releases and records provide a machine-readable summary of a contracting process, they should always be supported by links to well-managed documents.</span></p>
+<h2 id="documents">Documents</h2>
+<p><img src="../../assets/green_documents.svg.png" width="150" align="right">A contracting process generates many documents - from needs assessment and market studies, to tender notices and calls for proposals, and the actual text of contracts. Wherever there is no legal or policy restriction on doing so, these should be placed online in a stable location, and linked to from within the relevant OCDS release and records. </p>
+<p>See the <a href="../schema/reference.1#document">document</a> section of <a href="../schema/reference.1">schema reference</a> for more details of how to include documents in your data releases, and the <a href="../schema/codelists.1#document-type">documentType code list</a> for a list of common documents that the OCDS recommends are included, and for details of where documents may be attached within the OCDS structure.</p>
+<h2 id="releases">Releases</h2>
+<p><img src="../../assets/green_release.svg.png" width="150" align="right">To encourage the greatest possible openness of public contracting information, the Open Contracting Data Standard is designed to support <strong>real-time publication of information</strong>. At each stage of the contracting process, or at each point when changes, or amendments, are made to data about the contracting process, the standard allows publishers to provide a <strong>release</strong>.</p>
+<p>Releases are cumulative. Over a contracting process releases may be provided to describe a tender, announce contract awards, detail a finalised contract, and provide updates on implementation. Once published, a release must not be changed. Updated information should be shared through a new release.</p>
+<p>Releases may originate from a single system, or may be published in a distributed way by different systems, but releases relating to the same contracting process can be compiled by use of the same Open Contracting ID (OCID).</p>
+<p>You can think of releases as entries into a ledger: each new entry adds information, and may repeat previous information that remains true. The <strong>record</strong> brings together a snapshot of the latest state of all the information.</p>
+<div class="well">
+<p>In a complete OCDS implementation, each release would be published at its own URL, and kept online permanently. This may be difficult for some publishers to implement over the short term.
+</p>
+<p>
+In these cases, where publishers are providing a single URI for fetching information on a given contracting process, the releaseID and releaseDate must be modified whenever updated data is published.   A suggested pattern is to append an incrementing number to the end of the OCID in order to generate a unique releaseID for every change. For example:
+</p>
+<ul>
+    <li>ocds-a2ef3d01-1594121/1</li>
+    <li>ocds-a2ef3d01-1594121/2</li>
+    <li>ocds-a2ef3d01-1594121/3</li>
+</ul>
+</div>
+
+<h2 id="records">Records</h2>
+<p><img src="../../assets/green_record.svg.png" width="150" align="right">A contracting <strong>record</strong> provides a snapshot of the contracting process at a given point in time, bringing together all the releases into one place. It is updated as new information becomes available through releases.</p>
+<p>A record contains three key elements:
+<em> a list of all the releases that relate to that contracting process (required</em>)
+<em> a compiledRelease which is a release updated with the most up-to-date value for every field
+</em> a versionedRelease which contains a history of all the changes for every field</p>
+<p>At a minimum, this may be a list of pointers to web-accessible releases in order to allow third-parties to assemble and verify a record of the whole contracting process.</p>
+<p>The OCDS Schema defines a set of "<a href="../implementation/merging">merge strategies</a>" that work with the jsonmerge library to enable the compiled and versioned releases to be made from just the raw release data. Put another way, publishers do not need to maintain or do any versioning themselves, they can simply publish all the releases that belong to a contracting process.</p>
+<p></p><center><img src="../../assets/release_square.png" height="200"></center>
+<div class="well">
+<p>
+<strong>Worked example</strong>
+</p>
+<p>
+A publisher provides a tender release on 1st January, with a planned contract value of $1000.
+</p>
+<p>
+On 31st January, the publisher provides an amended tender release updating the planned contract value to $1500.
+</p>
+<p>
+After assessing bids, it is decided to award the contract in two lots.
+</p>
+<p>
+On 1st March, the publisher provides an award release, announcing Company A have been awarded a contract for $750.
+</p>
+<p>
+On 3rd March, the publisher provides an separate award release, announcing that company B have been awarded a contract for $750
+</p>
+<p>
+These independent releases each provide real-time information about what is happening in the contracting process. The record will combine them together. Using the same schema and structure as the releases, the main body of the record will contain a tender with contract value of $1500, and details of both awards.
+</p>
+<p>
+If the record is complete with versioning information, then the versioning section will reveal that the planned contract value changed from $1000 to $1500 on 31st January.
+</p>
+</div>
+
+<h2 id="updates-and-amendments">Updates and amendments</h2>
+<p>When new information becomes available, it should be contained in a new release, and the contracting record should be updated to reflect this. </p>
+<p>The term amendment has a specific legal significance in many jurisdictions. The <code>release.tag</code> provides a way to indicate when a release is an amendment, and the schema includes space to provide details of changes, and justification for the amendment that is being made.</p>
+<p>When <strong>records</strong> are created by merging together <strong>releases</strong> then a version history that can be used to track changes to fields is created in the <strong>record</strong>, allowing users to look back and see the changes that have occured over the lifetime of a contracting process. </p>
+<h2 id="notices">Notices</h2>
+<p>Good open contracting practice involves the widespread publication of key <strong>notices</strong> about different stages of the contracting process. Publishers should include details in their OCDS files of where tender, awards and contract notices were made available, both online and offline.</p>
+<p>Users want to be able to know when notices were published, where they were published, and what they contained. </p>
+<p>A notice can be attached to a tender, award or contract within OCDS using the <code>documents</code> property, and a <code>documentType</code> value of ‘notice’. If the notice is accessible online, then the URL to the notice can be given. If the notice was published in a printed publication, or posted in some other public venue, the document <code>description</code> field can be used to explain this, and the <code>format</code> can be set to ‘offline/print’. The <code>publicationDate</code> of the document should be the date the notice was made available.</p>
+<h2 id="packages">Packages</h2>
+<p>For the convenience of users, a collection of releases, or a collection of records, can be combined together in a release or record package.</p>
+<p>View the <a href="../schema/reference.1">schema reference</a> for more details. </p></div>
+		</div>
+	</div>
+
+</div>
+
+        </div>
+    </div>
+
+    <footer itemtype="http://schema.org/WPFooter" itemscope="itemscope" role="contentinfo" class="site-footer">
+        <div class="wrap">
+            <div class="standard-advanced">
+                <h5>
+                    Standard tools:
+                    <a href="components.1#" title="Change versions" data-toggle="modal" data-target="#changeVersion"><span class="oi oi-fork navicon" aria-hidden="true"></span></a>
+                    
+                </h5>
+            </div>
+            <img width="905" height="39" alt="line" src="http://ocds.wpengine.com/wp-content/uploads/2011/02/line.png" class="aligncenter wp-image-586 size-full">
+            <h5>
+                The Open Contracting Data Standard is a core product of the <a htef="http://www.open-contracting.org">Open Contracting Partnership (OCP)</a>.<br>Version 1.0 of the standard is being developed for the OCP by the <a href="http://www.webfoundation.org">World Wide Web Foundation</a>,<br>through a project supported by <a href="http://www.omidyar.com">Omidyar Network</a> and the <a href="http://www.worldbank.org">World Bank</a>.
+                <div class="neostyle3"><a href="https://creativecommons.org/licenses/by/4.0/"></a><h5><a href="https://creativecommons.org/licenses/by/4.0/">Except where otherwise noted, content on this site is licensed<br>under a Creative Commons Attribution 4.0 International license.</a></h5></div>
+            </h5>
+        </div>
+    </footer>
+    <!-- OVERLAY DIALOGS CONTENT -->
+    <div class="modal fade" id="help" tabindex="-1" role="dialog" aria-labelledby="Help" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h2 class="modal-title">Help</h2>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        In order to comment, you must be logged in. To log in, click the <span class="oi oi-account-login" aria-hidden="true"></span>
+                        button in the top bar. After logging in you can select senctences or paragraphs in the document and an icon will appear, as shown in the
+                        image below. Click the icon and enter text to view it.
+                    </p>
+                    <p>
+                        <img src="../../../../static/images/annotation_demo.png" width="150px"/>
+                    </p>
+                    <p>
+                        If you are having any problems, please don't hesitate to email us on our <a href="https://groups.google.com/a/webfoundation.org/forum/#!forum/public-ocds">mailing list</a>.
+                    </p>
+                </div><!--/.modal-body-->
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <div class="modal fade" id="changeVersion" tabindex="-1" role="dialog" aria-labelledby="ChangeVersion" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h2 class="modal-title">Change release from v.1.0.0 </h2>
+                </div>
+                <div class="modal-body">
+                    <p>
+                     You are currently viewing version 1.0.0 of the Open Contracting Data Standard. 
+                    
+                        Released on: July 29, 2015, 2:10 p.m.
+                    
+                    
+                    Use the following links to change to a different version:
+                    </p>
+                    <ul>
+                        
+                            
+                            <li><a href="../../../1__0__RC/en/index.html">1.0.Rc</a> (Last modified: March 19, 2015, 3:58 p.m.)</li>
+                            
+                        
+                            
+                            <li><a href="../../../../legacy/r/0__3__3/index.html">0.3.3</a> (Last modified: Sept. 19, 2014, 5:18 p.m.)</li>
+                            
+                        
+                            
+                            <li><a href="../../../../legacy/r/0__3__2/index.html">0.3.2</a> (Last modified: Sept. 3, 2014, 9:40 a.m.)</li>
+                            
+                        
+                            
+                            <li><a href="../../../../legacy/r/0__2__0/index.html">0.2.0</a> (Last modified: June 25, 2014, 2:07 p.m.)</li>
+                            
+                        
+                            
+                            <li><a href="../../../../legacy/r/0__1__0/index.html">0.1.0</a> (Last modified: June 20, 2014, 11:17 p.m.)</li>
+                            
+                        
+                    </ul>
+                    
+                    
+                        <p><a href="../../../master/en/index.html">Master</a> - the current working draft of the standard. This is not a release, it is our working copy currently undergoing edits.</p>
+                    
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div class="modal fade" id="changeLanguage" tabindex="-1" role="dialog" aria-labelledby="ChangeLanguage" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title">Change Language</h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        <ul>
+                            
+                            <li><a href="../index.html">English</a></li>
+                            
+                            <li><a href="../../es/index.html">Español</a></li>
+                            
+                        </ul>
+                    </p>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <!-- /OVERLAY DIALOGS -->
+
+</div><!-- /.site-container -->
+    
+    
+        <script type="text/javascript" src="../../../../static/js/site.js?ef56cfd0"></script>
+    
+
+    
+    <script src="http://assets.annotateit.org/annotator/v1.2.9/annotator-full.min.js"></script>
+    <script>
+    jQuery(function ($) {
+      if ($('html').is('.ie6, .ie7, .ie8, .ie9')) {
+			alert("This site does not work with Internet Explorer 9 or earlier. Please use a more recent version of Internet Explorer, or an open-source browser such as Firefox"); 
+      } else {
+        var PROJECTNAME = 'ocdsstandard',
+            VERSION = '1.0.0',
+            URI = 'http://ocds.opendataservices.coop/standard/r/1__0__0/en/key_concepts/components/',
+            SITE_UNIQUE_ID = '',
+            PAGE_UNIQUE_ID = SITE_UNIQUE_ID + VERSION;
+
+        a = $('#annotatable').annotator(
+            
+               { readOnly: true }
+            
+            );
+        a.annotator('setupPlugins', {}, {
+            
+                Auth: false,
+            
+
+            Tags: false,
+            Store: false,
+            Filter: false,
+            Permissions: {
+                showViewPermissionsCheckbox: false,
+                showEditPermissionsCheckbox: false,
+                user: '',
+                permissions: {
+                    'read':   ["group:__world__"],
+                    'update': [""],
+                    'delete': [""],
+                    'admin':  [""],
+                },
+            },
+        });
+        a.annotator('addPlugin', 'Store', { 
+            prefix: 'http://annotateit.org/api',
+            annotationData: {
+                'project': PROJECTNAME,
+                'version': VERSION,
+                'uri': URI,
+                'siteuid': SITE_UNIQUE_ID,
+                'pageuid': PAGE_UNIQUE_ID,
+            },
+            loadFromSearch: {
+                
+                    'pageuid': PAGE_UNIQUE_ID.toLowerCase(),
+                
+                'limit': 1000,
+            },
+        });
+      }
+    });
+    </script>
+
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-35677147-1', 'auto');
+            ga('send', 'pageview');
+
+        </script>
+</body>
+</html>

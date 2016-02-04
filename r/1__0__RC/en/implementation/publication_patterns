@@ -1,0 +1,412 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <!--[if lt IE 7 ]> <html class="ie6"> <![endif]-->
+  <!--[if IE 7 ]>    <html class="ie7"> <![endif]-->
+  <!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+  <!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+  <!--[if (gt IE 9)|!(IE)]><!--> <html class="modern"> <!--<![endif]-->
+	<title>OCDS Draft Standard</title>
+	<meta name="description" content="OCDS Draft Standard">
+  <meta name="author" content="Sarah Bird">
+  <link href='http://fonts.googleapis.com/css?family=Arvo:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+  
+  
+      <link type="text/css" href="../../../../static/css/site.css?92bade7d" rel="stylesheet"/>
+  
+  
+    <link rel="stylesheet" href="http://assets.annotateit.org/annotator/v1.2.9/annotator.min.css">
+
+</head>
+
+<body class="page page-id-569 page-template-default custom-background styles custom-header header-image full-width-content" data-spy="scroll" data-target=".toc">
+
+<div class="site-container">
+
+    <header itemtype="http://schema.org/WPHeader" itemscope="itemscope" role="banner" class="site-header">
+        <div class="wrap">
+            <div class="title-area">
+                <h1 itemprop="headline" class="site-title">
+                    <a href="http://standard.open-contracting.org/">Open Contracting Data Standard (OCDS) Project Site</a>
+                </h1>
+            </div>
+            <aside class="widget-area header-widget-area">
+                <section class="widget widget_nav_menu" id="nav_menu-2">
+                    <div class="widget-wrap">
+                        <nav itemtype="http://schema.org/SiteNavigationElement" itemscope="itemscope" role="navigation" class="nav-header">
+                            <ul class="menu genesis-nav-menu" id="menu-main-menu">
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-568" id="menu-item-568"><a onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://standard.open-contracting.org/project/', 'Project']);" href="http://standard.open-contracting.org/project/">Project</a></li>
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-682" id="menu-item-682"><a onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://ocds.open-contracting.org/standard/', 'Standard']);" href="http://ocds.open-contracting.org/standard/">Standard</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-570" id="menu-item-570"><a onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://standard.open-contracting.org/progress/', 'Progress']);" href="http://standard.open-contracting.org/progress/">Progress</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-608" id="menu-item-608"><a onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://standard.open-contracting.org/blog/', 'Blog']);" href="http://standard.open-contracting.org/blog/">Blog</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-576" id="menu-item-576"><a onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://standard.open-contracting.org/resources/', 'Resources']);" href="http://standard.open-contracting.org/resources/">Resources</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-580" id="menu-item-580"><a onclick="_gaq.push(['_trackEvent', 'outbound-widget-int', 'http://standard.open-contracting.org/getinvolved/', 'Get Involved']);" href="http://standard.open-contracting.org/getinvolved/">Get Involved</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </section>
+            </aside>
+        </div>
+    </header>
+
+    <div class="site-tagline"></div>
+    <div class="site-inner">
+        <div class="wrap">
+            
+<div class="col-lg-3">
+	<div class="side-nav" data-spy="affix" data-offset-top="5" data-offset-bottom="50">
+		<div class="toc">
+<ul class="nav">
+<li><a href="publication_patterns#publication-patterns">Publication patterns</a><ul class="nav">
+<li><a href="publication_patterns#basic">Basic</a><ul class="nav">
+<li><a href="publication_patterns#licensing">Licensing</a></li>
+<li><a href="publication_patterns#publication-policy">Publication policy</a></li>
+<li><a href="publication_patterns#flat-csv-file-options">Flat CSV file options</a></li>
+</ul>
+</li>
+<li><a href="publication_patterns#intermediate">Intermediate</a><ul class="nav">
+<li><a href="publication_patterns#release-and-record-uris">Release and record URIs</a></li>
+<li><a href="publication_patterns#provide-full-records">Provide full records</a></li>
+<li><a href="publication_patterns#user-friendly-publication">User-friendly publication</a><ul class="nav">
+<li><a href="publication_patterns#file-size-limits">File size limits</a></li>
+<li><a href="publication_patterns#segmenting-files">Segmenting files</a></li>
+<li><a href="publication_patterns#compression">Compression</a></li>
+<li><a href="publication_patterns#serving-files">Serving files</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="publication_patterns#advanced">Advanced</a><ul class="nav">
+<li><a href="publication_patterns#supporting-discovery">Supporting discovery</a><ul class="nav">
+<li><a href="publication_patterns#dataset-and-feed-discovery">Dataset and feed discovery</a></li>
+<li><a href="publication_patterns#feeds">Feeds</a></li>
+<li><a href="publication_patterns#well-known">Well Known</a></li>
+</ul>
+</li>
+<li><a href="publication_patterns#linking-data">Linking data</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+	</div>
+</div>
+
+<div class="col-lg-9 standard-docs">
+    
+    
+    
+    <div class="panel panel-danger">
+        <div class="panel-heading">
+					<h4 class="panel-title"><span class="glyphicon glyphicon-warning-sign"></span>Not the latest release.</h4>
+        </div>
+        <div class="panel-body">
+					<p>You are viewing v1__0__RC. The latest release is <a href="../../../1__0__0/en/index.html">v1__0__0</a></p>
+        </div>
+    </div>
+    
+		
+
+
+
+	<div id="annotatable">
+		<div class="tab-content">
+			<ul class="nav nav-tabs outer-menu">
+				<li><a href="../index.html">Standard</a></li>
+<li><a href="../key_concepts/introduction/index.html">Key concepts</a></li>
+<li><a href="../schema/reference.1">Schema</a></li>
+<li class="active"><a href="publication_levels.1">Implementation</a></li>
+			</ul>
+			<ul class="nav nav-tabs inner-menu">
+				<li><a href="publication_levels.1">Publication levels</a></li>
+<li class="active"><a href="publication_patterns">Publication patterns</a></li>
+<li><a href="merging">Merging</a></li>
+<li><a href="user_guidance">User guidance</a></li>
+<li><a href="registration.1">Registration</a></li>
+			</ul>
+			<div> 
+<h1 id="publication-patterns">Publication patterns</h1>
+<p><span class="lead">The following section sets out a number of publication patterns that will increase the usability of data for users.</span></p>
+<h2 id="basic">Basic</h2>
+<h3 id="licensing">Licensing</h3>
+<p>Publishing data under an open licenses is an important part of open contracting. Without this, restrictions on re-use may prevent many of the important <a href="../standard/use_cases.1">use cases</a> for open contracting information being realised.</p>
+<p>A license statement sets out the permission that users have to access, use and re-use the data. This can take the form of a <a href="http://creativecommons.org/publicdomain/">Public Domain Dedication or Certification</a> which transfers a dataset into the public domain, or re-asserts that there are no existing copyrights or database rights inherent in the dataset (which is the case for government datasets in some jurisdictions), or the application of a license which sets out the terms under which a dataset may be re-used.</p>
+<p>We recommend the use of either a public domain dedication/certification, or an attribution only license.</p>
+<ul>
+<li>Public domain dedication – asserting no copyright, database rights, or contractual rights over the open contracting data. Examples include <a href="http://creativecommons.org/publicdomain/">Creative Commons’ public domain tools</a>. These licenses are useful for publishers who manage their own works or have the necessary rights to apply a public domain license to another person’s work. In addition, although attribution cannot be "enforced" under such licenses, we recommend that you actively acknowledge and give attribution to all sources, such as the data providers or any data aggregators. Public domain approaches are preferred for Open Contracting Datasets.</li>
+<li>Attribution-only open licenses – licenses that allow for use and reuse, with the only restriction being that attribution (credit) be given. A examples includes the <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution licenses 4.0</a></li>
+</ul>
+<p>When using custom licenses, publishers are encouraged to check that they are <a href="http://opendefinition.org/licenses/">compliant with the Open Definition</a>.</p>
+<p>In structured data file you can embed a link to the license in the <code>license</code> field of the release or record package. In individual CSV files or other models of publishing, it may not be possible to embed the license information. In these cases (and in the structured data case also) publishers should ensure that a clear statement is provided alongside files where they are provided for download linking to, and explaining, the license terms they are under. Particular attention should be paid to ensuring license information on any data catalogues where open contracting data is listed are accurate. </p>
+<h3 id="publication-policy">Publication policy</h3>
+<p>Publishing Open Contracting data involves making a number of choices about what data and documents to include and how to classify and categorise different items. To allow users to understand the choices that a publisher has made, a publisher should provide a public web page or document that details the decisions they have made concerning the issues listed below.</p>
+<p>This document should also contain information about future plans for changes to the data and who to contact with enquiries about the data.</p>
+<p>Publication policy pages should include information about:</p>
+<ul>
+<li>Who is responsible for providing this data - including appropriate contact details and locations of where to offer feedback.</li>
+<li>How the data is generated, and how often - for example, a brief summary describing the systems the data is generated from, how often the source data is updated, and any processes that operate between the source data and the published open contracting data and documents.</li>
+<li>Any exclusions from the data - such as information which is not disclosed for reasons of privacy and security. This may describe the fields which are excluded for a selection of records, and/or the policy applied to decide if any information should be withheld from a public OCDS release. </li>
+<li>Any custom code lists used - or custom codes added to existing codelists. </li>
+<li>Future development plans - brief notes on the future plans of the publisher to improve their data.</li>
+</ul>
+<p>Publishers may also wish to apply for, and include the results of, an <a href="https://certificates.theodi.org/">Open Data Certificate</a>, on their publication policy pages. </p>
+<h3 id="flat-csv-file-options">Flat CSV file options</h3>
+<p>The <a href="../key_concepts/serialization/index.html#flat-csv-formats">serialization section</a> provides information on publishing data as flat CSV files.</p>
+<hr>
+<h2 id="intermediate">Intermediate</h2>
+<h3 id="release-and-record-uris">Release and record URIs</h3>
+<p>To achieve <a href="publication_levels.1">3 and 4 ☆</a> ODCS publication, publishers should provide data in files following the full OCDS schema, and either with releases and records provided in bulk (3 ☆), or with each release at it's own unique URI (4 ☆). </p>
+<!--ToDo: Work up examples of this in future-->
+
+<h3 id="provide-full-records">Provide full records</h3>
+<p>A basic OCDS record can list the releases related to a given contracting process. However, a full record will provide a compiled release, showing the current state of the contracting process.  </p>
+<h3 id="user-friendly-publication">User-friendly publication</h3>
+<p>The release and record data package containers (in JSON and CSV) offer a way to provide <strong>bulk access</strong> to a collection of contracting process release and records. However, very large files can be difficult for users to download and process. The following section provides suggested good practices which will assist users in accessing data. These are not requirements of the standard, but are based on experiences of maximising the number of users able to work with datasets with their existing hardware and software.</p>
+<h4 id="file-size-limits">File size limits</h4>
+<p>When generating data packages for bulk download, apply the following limits:</p>
+<ul>
+<li>Unzipped OCDS data packages should not exceed 1Gb each;</li>
+<li>Zipped OCDS data packages should not exceed 10 Mb each;</li>
+<li>A single OCDS data package should contain a maximim of 250,000 awards or contracts; </li>
+</ul>
+<p>When a file is likely to exceed one of these limits, release or records should be split across multiple files. Dynamically generated bulk downloads do not have to apply these limits, though publishers should consider ways to advise users when a query is likely to generate a very large file. </p>
+<h4 id="segmenting-files">Segmenting files</h4>
+<p>When the suggested limits require publication of multiple files, publishers should consider ways to split data across available files. </p>
+<p>For releases, publishers may choose to:</p>
+<ol>
+<li>Segment by <strong>releaseDate - </strong>placing all the releases from a given day, month or year in the same file;</li>
+<li>Segment by <strong>contracting process identifier </strong>- placing all the releases related to a given set of contract process identifiers together in the same data package;</li>
+</ol>
+<p>For records, publishers should segment either based on the first <strong>releaseDate</strong> associated with a contracting process, or by <strong>contracting process identifier.</strong></p>
+<p>Following these approaches will avoid release and records moving between files. </p>
+<h4 id="compression">Compression</h4>
+<p>OCDS data packages may be compressed in order to save on diskspace and bandwidth. </p>
+<p>If compressing data packages, publishers <em>should</em> use the zip file format.</p>
+<h4 id="serving-files">Serving files</h4>
+<p>Publishers should ensure that the web server providing access to bulk files correctly reports the <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.29">HTTP Last-Modified</a> header so that consuming applications only need to download updated files.</p>
+<h2 id="advanced">Advanced</h2>
+<h3 id="supporting-discovery">Supporting discovery</h3>
+<p>There are many thousands of organisations who should be able to publish Open Contracting data. As a result, maintaining a central registry of all published data is impractical. Instead, OCDS proposes a common pattern for the discovery of Open Contracting data releases and records.</p>
+<p>For the discovery of bulk datasets, and the location of any data feeds, we propose use of a data.json file.</p>
+<p>For the discovery of individual releases and records, we propose use atom feeds.</p>
+<h4 id="dataset-and-feed-discovery">Dataset and feed discovery</h4>
+<p>Publishers should provide a data.json document describing the location of all of the bulk OCDS files available for download. </p>
+<p>This should follow the structure proposed by the <a href="https://project-open-data.github.io/schema/">US Project Open Data</a> with:</p>
+<ul>
+<li>Each record containing a distribution block with at least one accessURL pointing to OCDS data.</li>
+<li>Each record containing 'open-contracting-data', and either 'open-contracting-release' or 'open-contracting-record' in the keyword array.</li>
+<li>accessLevel set appropriately</li>
+</ul>
+<p>In addition, the data.json document may contain one or more records with the keyword 'open-contracting-feed' and either 'open-contracting-release' or 'open-contracting-record' and pointing via an accessURL in their distribution block to an atom feed document.</p>
+<h4 id="feeds">Feeds</h4>
+<p>Publishers exposing individual records and releases, of regularly updated data packages in small sets, should provide one or more <a href="http://en.wikipedia.org/wiki/Atom_%28standard%29">atom feeds</a> that index these, and provide an easy mechanism for users to discover recently published or updated release and records.</p>
+<p>The link to the release or record should be provided via a <link> tag, and the updated date of the entry should reflect the updated date of that release or record. The <id> should reflect the release id for release, or the ocid for records.</id></p>
+<p>The release.tag should be contained within a <category> element of the feed. </category></p>
+<p>Feeds requiring pagination should follow the approach set out in <a href="https://tools.ietf.org/html/rfc5005#section-3">RFC 5005</a>.</p>
+<h4 id="well-known">Well Known</h4>
+<p>Future implementations of OCDS will explore use of the <a href="http://tools.ietf.org/html/rfc5785">/.well-known/</a> protocol to declare a location for storing a data.json file. </p>
+<p>At present, such files can be hosted anywhere, and consuming applications pointed towards them manually. </p>
+<p>The data.json structure has been chosen to allow organisations following this approach to include tagged 'open-contracting-data' within their existing data discovery mechanisms, and given the availability of a plugin for the widely used CKAN which will also support exposure of data.json files. </p>
+<h3 id="linking-data">Linking data</h3>
+<p>For 5 ☆ publication of OCDS data, publishers should seek to use URIs in their datasets, linking to other machine-readable data sources at an entity-by-entity level.</p></div>
+		</div>
+	</div>
+
+</div>
+
+        </div>
+    </div>
+
+    <footer itemtype="http://schema.org/WPFooter" itemscope="itemscope" role="contentinfo" class="site-footer">
+        <div class="wrap">
+            <div class="standard-advanced">
+                <h5>
+                    Standard tools:
+                    <a href="publication_patterns#" title="Change versions" data-toggle="modal" data-target="#changeVersion"><span class="oi oi-fork navicon" aria-hidden="true"></span></a>
+                    
+                </h5>
+            </div>
+            <img width="905" height="39" alt="line" src="http://ocds.wpengine.com/wp-content/uploads/2011/02/line.png" class="aligncenter wp-image-586 size-full">
+            <h5>
+                The Open Contracting Data Standard is a core product of the <a htef="http://www.open-contracting.org">Open Contracting Partnership (OCP)</a>.<br>Version 1.0 of the standard is being developed for the OCP by the <a href="http://www.webfoundation.org">World Wide Web Foundation</a>,<br>through a project supported by <a href="http://www.omidyar.com">Omidyar Network</a> and the <a href="http://www.worldbank.org">World Bank</a>.
+                <div class="neostyle3"><a href="https://creativecommons.org/licenses/by/4.0/"></a><h5><a href="https://creativecommons.org/licenses/by/4.0/">Except where otherwise noted, content on this site is licensed<br>under a Creative Commons Attribution 4.0 International license.</a></h5></div>
+            </h5>
+        </div>
+    </footer>
+    <!-- OVERLAY DIALOGS CONTENT -->
+    <div class="modal fade" id="help" tabindex="-1" role="dialog" aria-labelledby="Help" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h2 class="modal-title">Help</h2>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        In order to comment, you must be logged in. To log in, click the <span class="oi oi-account-login" aria-hidden="true"></span>
+                        button in the top bar. After logging in you can select senctences or paragraphs in the document and an icon will appear, as shown in the
+                        image below. Click the icon and enter text to view it.
+                    </p>
+                    <p>
+                        <img src="../../../../static/images/annotation_demo.png" width="150px"/>
+                    </p>
+                    <p>
+                        If you are having any problems, please don't hesitate to email us on our <a href="https://groups.google.com/a/webfoundation.org/forum/#!forum/public-ocds">mailing list</a>.
+                    </p>
+                </div><!--/.modal-body-->
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <div class="modal fade" id="changeVersion" tabindex="-1" role="dialog" aria-labelledby="ChangeVersion" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h2 class="modal-title">Change release from v.1.0.Rc </h2>
+                </div>
+                <div class="modal-body">
+                    <p>
+                     You are currently viewing version 1.0.Rc of the Open Contracting Data Standard. 
+                    
+                        Released on: March 19, 2015, 3:58 p.m.
+                    
+                    
+                    Use the following links to change to a different version:
+                    </p>
+                    <ul>
+                        
+                            
+                            <li><a href="../../../1__0__0/en/index.html">1.0.0</a> (Last modified: July 29, 2015, 2:10 p.m.)</li>
+                            
+                        
+                            
+                            <li><a href="../../../../legacy/r/0__3__3/index.html">0.3.3</a> (Last modified: Sept. 19, 2014, 5:18 p.m.)</li>
+                            
+                        
+                            
+                            <li><a href="../../../../legacy/r/0__3__2/index.html">0.3.2</a> (Last modified: Sept. 3, 2014, 9:40 a.m.)</li>
+                            
+                        
+                            
+                            <li><a href="../../../../legacy/r/0__2__0/index.html">0.2.0</a> (Last modified: June 25, 2014, 2:07 p.m.)</li>
+                            
+                        
+                            
+                            <li><a href="../../../../legacy/r/0__1__0/index.html">0.1.0</a> (Last modified: June 20, 2014, 11:17 p.m.)</li>
+                            
+                        
+                    </ul>
+                    
+                    
+                        <p><a href="../../../master/en/index.html">Master</a> - the current working draft of the standard. This is not a release, it is our working copy currently undergoing edits.</p>
+                    
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div class="modal fade" id="changeLanguage" tabindex="-1" role="dialog" aria-labelledby="ChangeLanguage" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title">Change Language</h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        <ul>
+                            
+                            <li><a href="../index.html">English</a></li>
+                            
+                            <li><a href="../../es/index.html">Español</a></li>
+                            
+                        </ul>
+                    </p>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <!-- /OVERLAY DIALOGS -->
+
+</div><!-- /.site-container -->
+    
+    
+        <script type="text/javascript" src="../../../../static/js/site.js?ef56cfd0"></script>
+    
+
+    
+    <script src="http://assets.annotateit.org/annotator/v1.2.9/annotator-full.min.js"></script>
+    <script>
+    jQuery(function ($) {
+      if ($('html').is('.ie6, .ie7, .ie8, .ie9')) {
+			alert("This site does not work with Internet Explorer 9 or earlier. Please use a more recent version of Internet Explorer, or an open-source browser such as Firefox"); 
+      } else {
+        var PROJECTNAME = 'ocdsstandard',
+            VERSION = '1.0.RC',
+            URI = 'http://ocds.opendataservices.coop/standard/r/1__0__RC/en/implementation/publication_patterns/',
+            SITE_UNIQUE_ID = '',
+            PAGE_UNIQUE_ID = SITE_UNIQUE_ID + VERSION;
+
+        a = $('#annotatable').annotator(
+            
+               { readOnly: true }
+            
+            );
+        a.annotator('setupPlugins', {}, {
+            
+                Auth: false,
+            
+
+            Tags: false,
+            Store: false,
+            Filter: false,
+            Permissions: {
+                showViewPermissionsCheckbox: false,
+                showEditPermissionsCheckbox: false,
+                user: '',
+                permissions: {
+                    'read':   ["group:__world__"],
+                    'update': [""],
+                    'delete': [""],
+                    'admin':  [""],
+                },
+            },
+        });
+        a.annotator('addPlugin', 'Store', { 
+            prefix: 'http://annotateit.org/api',
+            annotationData: {
+                'project': PROJECTNAME,
+                'version': VERSION,
+                'uri': URI,
+                'siteuid': SITE_UNIQUE_ID,
+                'pageuid': PAGE_UNIQUE_ID,
+            },
+            loadFromSearch: {
+                
+                    'pageuid': PAGE_UNIQUE_ID.toLowerCase(),
+                
+                'limit': 1000,
+            },
+        });
+      }
+    });
+    </script>
+
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-35677147-1', 'auto');
+            ga('send', 'pageview');
+
+        </script>
+</body>
+</html>
