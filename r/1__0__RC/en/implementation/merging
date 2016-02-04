@@ -148,7 +148,7 @@
 <li>Item.additionalClassifications</li>
 <li>Amendment.changes</li>
 </ul>
-<p>Other lists with <code>.id</code> properties do not need to be republished in full, but publishers should note the <a href="../schema/reference.1#emptying-fields-and-values">guidance on emptying fields and values</a>.</p>
+<p>Other lists with <code>.id</code> properties do not need to be republished in full, but publishers should note the <a href="../schema/reference#emptying-fields-and-values">guidance on emptying fields and values</a>.</p>
 <h3 id="merge-strategies">Merge Strategies</h3>
 <p>The purpose of merging releases is to create (a) a snapshot record of the current state of a contracting process; (b) a versioned history of the process. </p>
 <p>Different sections of the data structure need to be handled differently as releases are merged. For some lists, a new release should overwrite the previous list in fully. For example, if a later release updates the list of suppliers against an award, this new list in full should be taken as the latest authoritative information. For other lists, such as a list of contracts, a release may add a new contract to the list without needing to repeat all the previous contracts, or may amend a single award without repeating all the other awards. </p>
@@ -409,7 +409,7 @@ whole block of data, not just an incremental change.</p>
 item with the corresponding id is looked up for the before and after versions of the release and the
 fields are then matched accordingly.</p>
 <p>If a given entry is omitted (e.g. there is no information about a particular contract in a subsequent release), then the previous values carry forward. </p>
-<p>To remove an entry it would have to have it's field values set to null, as per the <a href="../schema/reference.1#emptying-fields-and-values">guidance on emptying fields and values</a>.</p>
+<p>To remove an entry it would have to have it's field values set to null, as per the <a href="../schema/reference#emptying-fields-and-values">guidance on emptying fields and values</a>.</p>
 <div class="tabbable">
 <ul class="nav nav-tabs">
   <li class="active"><a href="merging#r1" data-toggle="tab">release 1</a></li>
