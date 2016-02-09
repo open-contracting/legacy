@@ -1,3 +1,9 @@
+# Static site copies of old Open Contracting Data Standard sites
+
+These can be viewed online at http://standard.open-contracting.org/legacy/r/
+
+## How this was created
+
 `1.*` versions downloaded from original Django site with:
 
 ```
