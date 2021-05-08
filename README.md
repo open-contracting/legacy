@@ -1,6 +1,6 @@
 # Static site copies of old Open Contracting Data Standard sites
 
-These can be viewed online at http://standard.open-contracting.org/legacy/r/
+These can be viewed online at https://open-contracting.github.io/legacy/
 
 ## How this was created
 
